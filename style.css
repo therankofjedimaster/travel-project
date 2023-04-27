@@ -1,9 +1,30 @@
 body {
   font-family: 'Nunito Sans', sans-serif;
+  background-color: rgb(249, 245, 242);
 }
 
+@media (max-width: 900px) {
+  .container {
+    max-width: 800px;
+  }
+  header {
+    padding: 30px 0;
+  }
+  h1 {
+    font-size: 45px;
+  }
+  p {
+    font-size: 20px;
+  }
+}
+.container {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1400px;
+}
 header {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url('images/madrid-header.jpg');
@@ -12,26 +33,35 @@ header {
   background-repeat: no-repeat;
   text-align: center;
   padding: 60px 0;
+  letter-spacing: 2px;
 }
 
 h1 {
   color: rgb(240, 236, 231);
   font-size: 60px;
+  font-weight: 900;
 }
 p {
   color: rgb(240, 236, 231);
   font-size: 25px;
+  padding: 10px;
+  font-weight: 600;
 }
 
 button {
   background-color: rgb(240, 236, 231);
-  font-size: 20px;
-  border: 1px solid rgb(240, 236, 231);
   border-radius: 10px;
+  border: 1px solid rgb(240, 236, 231);
+  font-size: 20px;
   padding: 20px;
 }
 
+a:hover,
 button:hover {
   color: rgb(241, 114, 10);
   cursor: grab;
+}
+
+footer {
+  text-align: center;
 }
