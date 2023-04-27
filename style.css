@@ -4,11 +4,17 @@ body {
 }
 
 @media (max-width: 900px) {
-  .container {
+  .container-header {
+    max-width: 800px;
+  }
+  .container-footer {
     max-width: 800px;
   }
   header {
     padding: 30px 0;
+  }
+  footer {
+    padding: 20px 0;
   }
   h1 {
     font-size: 45px;
@@ -16,8 +22,20 @@ body {
   p {
     font-size: 20px;
   }
+
+  .grid p {
+    display: none;
+  }
+
+  .grid h3 {
+    display: none;
+  }
+
+  .grid li {
+    line-height: 1.5;
+  }
 }
-.container {
+.container-header {
   display: flex;
   justify-content: center;
   margin: 0 auto;
@@ -41,7 +59,7 @@ h1 {
   font-size: 60px;
   font-weight: 900;
 }
-p {
+h4 {
   color: rgb(240, 236, 231);
   font-size: 25px;
   padding: 10px;
@@ -62,6 +80,39 @@ button:hover {
   cursor: grab;
 }
 
+.container-footer {
+  display: flex;
+  justify-content: justify;
+  margin: 0 auto;
+  max-width: 1400px;
+}
 footer {
-  text-align: center;
+  max-width: 1400px;
+  margin: 0 auto;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url('images/madrid-footer.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: rgb(240, 236, 231);
+  padding: 25px 0;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 5px;
+}
+footer a {
+  color: rgb(240, 236, 231);
+}
+
+footer li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer ul {
+  margin: 0;
+  padding: 0;
 }
