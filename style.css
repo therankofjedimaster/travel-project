@@ -16,11 +16,28 @@ body {
   h1 {
     font-size: 45px;
   }
-  p {
-    font-size: 20px;
-  }
-  .grid li {
+  .footer-grid li {
     line-height: 1.5;
+  }
+  .text-box {
+    text-align: center;
+  }
+  .text-box h3 {
+    display: none;
+  }
+  .two-col-grid {
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+  }
+  .three-col-grid {
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+  }
+  .img-box {
+    display: none;
+  }
+  section {
+    padding: 30px;
   }
 }
 .container-header {
@@ -54,16 +71,26 @@ h4 {
   font-weight: 600;
 }
 
-button {
+.button-header {
   background-color: rgb(240, 236, 231);
   border-radius: 10px;
   border: 1px solid rgb(240, 236, 231);
   font-size: 20px;
   padding: 20px;
+  color: black;
 }
 
-a:hover,
+.button-header:hover {
+  color: rgb(241, 114, 10);
+  cursor: grab;
+}
+
 button:hover {
+  color: black;
+  cursor: grab;
+}
+
+a:hover {
   color: rgb(241, 114, 10);
   cursor: grab;
 }
@@ -85,9 +112,9 @@ footer {
   color: rgb(240, 236, 231);
   padding: 25px 0;
 }
-.grid {
+.footer-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 2fr 2fr;
   padding: 5px;
 }
 footer a {
@@ -103,4 +130,64 @@ footer li {
 footer ul {
   margin: 0;
   padding: 0;
+}
+
+section {
+  max-width: 1200px;
+  margin: 0px auto;
+  padding: 30px 0;
+}
+
+section img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.two-col-grid h2 {
+  opacity: 0.8;
+}
+
+.two-col-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.three-col-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+.card {
+  margin: 20px;
+}
+
+.card-body {
+  padding: 10px;
+}
+
+.card-footer {
+  padding: 0 10px 10px;
+}
+.img-box {
+  max-width: 100%;
+  display: block;
+  filter: contrast(90%);
+}
+button {
+  border-radius: 10px;
+  background-color: rgb(225, 162, 113);
+  border: 1px solid rgb(225, 162, 113);
+  color: rgb(240, 236, 231);
+  font-size: 20px;
+  padding: 10px;
+}
+.text-center {
+  text-align: center;
+}
+
+iframe {
+  display: block;
+  margin: 0 auto;
+  padding: 5px;
 }
